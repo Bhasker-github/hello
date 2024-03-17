@@ -6,7 +6,7 @@ public class hlo{
     String url="jdbc:mysql://localhost:3306/lion";
     String uname="root";
     String pass="mysql";
-    Class.forName("com.mysql.jdbc.Driver");
+    Class.forName("com.mysql.cj.jdbc.Driver");
     Connection con=DriverManager.getConnection(url, uname, pass);
     Statement st=con.createStatement();
     ResultSet rs=st.executeQuery("select *from lb");
