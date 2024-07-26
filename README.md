@@ -52,7 +52,7 @@ The main Java file `hlo.java` contains the code to connect to the MySQL database
 
 ### hlo.java
 
-```java
+
 package hello;
 import java.sql.*;
 
@@ -73,24 +73,9 @@ public class hlo {
         st.close();
     }
 }
-Explanation
-Database URL, Username, and Password:
 
-url: The URL to connect to the MySQL database.
-uname: The MySQL username.
-pass: The MySQL password.
-JDBC Driver:
 
-The Class.forName("com.mysql.cj.jdbc.Driver") statement loads the MySQL JDBC driver.
-Connection and Statement:
-
-The Connection object is used to create a connection to the database.
-The Statement object is used to execute SQL queries.
-ResultSet:
-
-The ResultSet object stores the result of the executed SQL query.
-The while loop iterates through the results and prints each record.
-Running the Project
+#Running the Project
 Compile the hlo.java file:
 
 bash
