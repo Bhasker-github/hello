@@ -52,7 +52,7 @@ The main Java file `hlo.java` contains the code to connect to the MySQL database
 
 ### hlo.java
 
-
+```java
 package hello;
 import java.sql.*;
 
@@ -73,20 +73,3 @@ public class hlo {
         st.close();
     }
 }
-
-
-#Running the Project
-Compile the hlo.java file:
-
-bash
-Copy code
-javac -cp ".:path/to/mysql-connector-java.jar" hello/hlo.java
-Run the compiled Java class:
-
-bash
-Copy code
-java -cp ".:path/to/mysql-connector-java.jar" hello.hlo
-Ensure you replace path/to/mysql-connector-java.jar with the actual path to the MySQL Connector/J jar file.
-
-Conclusion
-This project provides a basic example of how to connect to a MySQL database using Java, execute a query, and process the results. You can expand on this foundation to build more complex database-driven applications.
